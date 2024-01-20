@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.logout{
+    position: absolute;
+    right: 10px;
+    top: 35px;
+}
+
+.logout button{
+    border: 0;
+    border-radius: 10px;
+    background-color: white;
+    color: #007bff;
+    padding: 10px 20px;
+    display: block;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.logout button:hover{
+    background-color: #022d5a;
+    color: white;
+}
+
+main {
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add these styles to your existing styles.css file */
+
+.student-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.student-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.student-card p {
+    margin: 8px 0;
+    color: #555;
+}
+
+.student-photo{
+    width: 100%;
+    text-align: center;
+}
+
+.student-photo img{
+    width: 100%;
+    border-radius: 50%;
+    max-width: 200px;
+}
+.circle-loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    }
+    
+
+
+
+@media screen and (min-width: 700px) {
+    .student-list{
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 4%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .student-list{
+
+        grid-template-columns: 32% 32% 32%;
+        gap: 2%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .student-list{
+
+        grid-template-columns: 23% 23% 23% 23%;
+        gap: 2%;
+    }
+}

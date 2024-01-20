@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/dashboard.css">
+</head>
+<body>
+
+<div class="container dashboard-container">
+    <div class="dashboard-header">
+        <h2>User Dashboard</h2>
+    </div>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <h3>User Profile</h3>
+        </div>
+
+        <div id="userDetails">
+            <!-- <div class="profile-photo">
+         
+                <img src="./assets/profile.png" alt="User Photo">
+            </div>
+
+            <div class="profile-info">
+        
+                <p><strong>Full Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> john.doe@example.com</p>
+                <p><strong>Department:</strong> Computer Science</p>
+                <p><strong>Matric Number:</strong> ABC123</p>
+                <p><strong>Phone:</strong> +1234567890</p>
+            </div> -->
+        </div>
+        <div class="circle-loader" id="loader"></div>
+    </div>
+
+    <div>
+        
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <div class="dashboard-footer">
+        <p>&copy; 2024 Student Registration System</p>
+    </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<script src="./assets/firebase-config.js"></script>
+<script src="./assets/dashboard.js"></script>
+
+</body>
+</html>

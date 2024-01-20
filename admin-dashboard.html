@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./assets/admin.css">
+</head>
+<body>
+
+    <header>
+        <h1>Admin Dashboard</h1>
+        <!-- Add any other header content or navigation links here -->
+
+        <div class="logout">
+            <button onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>All Student Details</h2>
+        <p id="totalStudent"></p>
+        <ul id="studentList" class="student-list">
+            <div class="circle-loader" id="loader"></div>
+        </ul>
+
+
+    </main>
+<br><br><br><br>
+    <footer>
+        <!-- Add footer content here -->
+        <p>&copy; 2024 Admin Dashboard</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="./assets/firebase-config.js"></script>
+    <script src="./assets/admin.js"></script>
+</body>
+</html>

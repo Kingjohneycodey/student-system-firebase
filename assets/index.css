@@ -165,7 +165,8 @@ footer {
 
 @media screen and (max-width: 500px) {
     .hero-section{
-        padding-top: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 

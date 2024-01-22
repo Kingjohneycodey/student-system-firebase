@@ -129,7 +129,7 @@ footer {
 
 
 .hero-section{
-    background-image: url('./The\ Complete\ Student\ Registration\ System.svg');
+    background-image: url('./IMG-20240122-WA0017.jpg');
     width: 100%;
     background-size: cover;
 
@@ -139,6 +139,11 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
+
+}
+
+.hero-text{
+    backdrop-filter: blur(1px);
 }
 .main{
     width: 100%;
@@ -208,7 +213,6 @@ footer {
 
     .hero-section{
 
-        background-image: url('./The\ Complete\ Student\ Registration\ System.svg');
         width: 100%;
         height: 80vh;
         background-size: cover;

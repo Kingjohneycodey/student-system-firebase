@@ -21,6 +21,10 @@ header {
     background-color: #007bff;
     color: #ffffff;
     padding: 20px 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
 }
 
 header h1 {
@@ -36,7 +40,7 @@ header h1 {
     
 }
 
-.links{
+#links{
     display: none;
 }
 
@@ -137,12 +141,34 @@ footer {
     cursor: pointer;
 }
 
+.header-logo{
+    max-width: 95%;
+}
+
+.visible{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 95px;
+    padding: 20px;
+
+
+}
+
+
+.visible button{
+    width: 95%;
+    display: block;
+    background-color: rgb(231, 228, 228);
+}
+
 @media screen and (min-width:900px) {
     .aside{
         display: flex;
     }
 
-    .links{
+    #links{
         display: flex;
     }
     .toggle{

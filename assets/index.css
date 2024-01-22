@@ -1,14 +1,18 @@
-body {
-    font-family: 'Arial', sans-serif;
+
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif; 
+}
+
+body {
     background-color: #f8f9fa;
     color: #495057;
 }
 
-.container {
-   
+.container { 
     margin: 0 auto;
     padding: 20px;
 }
@@ -26,9 +30,14 @@ header h1 {
 .aside{
     position: absolute;
     right: 10px;
-    top: 35px;
+    top: 20px;
     display: flex;
     align-items: center;
+    
+}
+
+.links{
+    display: none;
 }
 
 .aside button{
@@ -74,7 +83,6 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(194, 193, 193);
     padding: 20px;
-    margin-right: 20px;
 }
 
 .feature img {
@@ -106,19 +114,72 @@ footer {
 }
 
 
+
+
+.hero-section{
+    background-image: url('./The\ Complete\ Student\ Registration\ System.svg');
+    width: 100%;
+    background-size: cover;
+    margin-top: -40px;
+    height: 40vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.main{
+    width: 100%;
+}
+
+.toggle i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
 @media screen and (min-width:900px) {
+    .aside{
+        display: flex;
+    }
+
+    .links{
+        display: flex;
+    }
+    .toggle{
+        display: none;
+    }
+
     .hero-section{
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: left;
     }
     .features{
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+    }
+
+    .feature{
+        margin-right: 20px;
+    }
+
+    .hero-section{
+
+        background-image: url('./The\ Complete\ Student\ Registration\ System.svg');
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        text-align: left;
+    }
+
+    .hero-text{
+        font-size: 30px;
+        max-width: 50%;
     }
 }
 
-.hero-image img{
-    max-width: 400px;
-}
+
+
+

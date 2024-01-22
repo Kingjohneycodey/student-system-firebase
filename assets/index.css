@@ -88,6 +88,7 @@ h2 {
     box-shadow: 0 0 10px rgb(194, 193, 193);
     padding: 20px;
     text-align: justify;
+    line-height: 20px;
 }
 
 .feature h3{
@@ -98,6 +99,7 @@ h2 {
 .feature img {
     width: 50px;
     margin-right: 20px;
+    
 }
 
 #cta {

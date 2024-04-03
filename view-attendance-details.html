@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./assets/admin.css">
+    <style>
+        /* CSS styles for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lecturer Dashboard</h1>
+        <!-- Add any other header content or navigation links here -->
+
+        <div class="logout">
+            <button onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <main>
+  
+
+   
+        <!-- <p id="totalStudent"></p>
+        <ul id="studentList" class="student-list">
+            <div class="circle-loader" id="loader"></div>
+        </ul> -->
+
+        <h1>Attendance Records</h1>
+
+        <div id="attendanceRecords"></div>
+
+    </main>
+<br><br><br><br>
+    <footer>
+        <!-- Add footer content here -->
+        <p>&copy; 2024 Lecturer Dashboard</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="./assets/firebase-config.js"></script>
+    <script src="./assets/attendance-details.js"></script>
+</body>
+</html>

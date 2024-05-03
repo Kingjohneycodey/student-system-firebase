@@ -34,7 +34,6 @@ header h1 {
 .aside{
     position: absolute;
     right: 20px;
-    top: 20px;
     display: flex;
     align-items: center;
     

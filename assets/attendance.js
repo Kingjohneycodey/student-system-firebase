@@ -25,6 +25,9 @@ function addAttendanceRecord(attendanceFormId, fullname, matricnumber) {
                                 })
                                 .then((docRef) => {
                                     console.log("Attendance record added with ID: ", docRef.id);
+
+                                    alert("Attendance recorded successfully")
+                                    location.href='index.html'
                                     return docRef.id; // Return the ID of the newly created document
                                 })
                                 .catch((error) => {

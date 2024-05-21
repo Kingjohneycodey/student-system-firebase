@@ -41,8 +41,8 @@ function displayAttendanceForms() {
 
                 // Populate cells with data
                 dateCell.textContent = attendanceForm.date;
-                idCell.textContent = attendanceForm.id;
-
+                idCell.innerHTML = 'https://student-registration-system1.vercel.app/student-attendance-form.html?id='+attendanceForm.id;
+               
                 // Create a View button and wrap it with a link
                 const viewButton = document.createElement('button');
                 viewButton.textContent = 'View';

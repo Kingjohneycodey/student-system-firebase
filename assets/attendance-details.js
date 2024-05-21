@@ -23,18 +23,22 @@ function getAttendanceRecordsByFormId(attendanceFormId) {
 
 // Function to display attendance records in a table
 function displayAttendanceRecords(attendanceRecords) {
-    const table = document.createElement('table');
+    const table = document.createElement('div');
     table.innerHTML = `
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Matric Number</th>
-                <!-- Add more table headers as needed -->
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Table body will be dynamically populated here -->
-        </tbody>
+   <div class="table-container">
+   <table>
+   <thead>
+       <tr>
+           <th>Name</th>
+           <th>Matric Number</th>
+           <!-- Add more table headers as needed -->
+       </tr>
+   </thead>
+   <tbody>
+       <!-- Table body will be dynamically populated here -->
+   </tbody>
+   </table>
+   </div>
     `;
     
     const tbody = table.querySelector('tbody');
@@ -58,7 +62,10 @@ function displayAttendanceRecords(attendanceRecords) {
 
     // Append the new table to the document
     table.id = 'attendanceRecordsTable';
-    document.body.appendChild(table);
+    const targetDiv = document.getElementById('tabler');
+
+    // Append the table to the target div
+    targetDiv.appendChild(table);
 }
 
 
